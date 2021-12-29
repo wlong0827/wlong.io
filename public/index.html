@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <title>Landing | Will Long</title>
+
+    <meta name="description" content="Will Long's personal homepage." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47823305-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-47823305-3');
+	</script>
+	<script type="module">
+	  // Import the functions you need from the SDKs you need
+	  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+	  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+	  // TODO: Add SDKs for Firebase products that you want to use
+	  // https://firebase.google.com/docs/web/setup#available-libraries
+
+	  // Your web app's Firebase configuration
+	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	  const firebaseConfig = {
+	    apiKey: "AIzaSyD2jtIVlMOSUC7xPjixfS02oZs8ojOmmbQ",
+	    authDomain: "personal-website-600d1.firebaseapp.com",
+	    projectId: "personal-website-600d1",
+	    storageBucket: "personal-website-600d1.appspot.com",
+	    messagingSenderId: "917874316390",
+	    appId: "1:917874316390:web:c0e1016ff3ba696c0f89a7",
+	    measurementId: "G-XBDH0ZLJ52"
+	  };
+
+	  // Initialize Firebase
+	  const app = initializeApp(firebaseConfig);
+	  const analytics = getAnalytics(app);
+	</script>
+
+</head>
+<body>
+	<div class="hero_sec">
+		<div class="hero_txt">
+			<span class="hero_inner">William <span class="hero_accent hidden-xs">F</span> Long</span>
+			<br>
+			<h3 class="hero-sub">
+				<a class="link emphasis" href="http://linkedin.com/in/wlong0827">About Me</a>
+				<span class="hidden-xs"> &middot; </span><br class="visible-xs">
+				<a class="link" href="https://arxiv.org/search/?query=%22William+Long%22&searchtype=author&source=header">Research</a>
+
+				<span class="hidden-xs"> &middot; </span><br class="visible-xs">
+				<a class="link" href="http://numinar.com">Numinar Analytics</a>
+
+				<div class="hidden-xs"><br></div>
+				<br class="visible-xs">
+
+				<br class="visible-xs">
+				<a class="link" href="mailto:wlong0827@gmail.com">Email</a>
+				<span class="hidden-xs"> &middot; </span><br class="visible-xs">
+
+				<a class="link" href="http://wlong.io/id_rsa.pub">RSA</a>
+				<span class="hidden-xs"> &middot; </span><br class="visible-xs">
+
+				<a class="link" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/numinar'});return false;">Schedule</a>
+
+				<br class="visible-xs">
+			</h3>
+		</div>
+	</div>
+	<div id="hero_particles"></div>
+	<div class="help-text">Try clicking on one of the links above!</div>
+
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

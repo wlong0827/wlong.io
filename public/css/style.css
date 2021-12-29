@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600);
+
+html,
+body {
+  margin: 0;
+  background: #0B346E;
+  font: 100 'Open Sans', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+img {
+  border-radius: 50%;
+}
+
+#hero_particles {
+  z-index: 4;
+  height: 100%;
+  height: 100vh;
+  background: #0B346E;
+}
+
+.hero_sec {
+  position: absolute;
+  z-index: 5;
+  top: 32.5%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#bookingjs {
+  z-index: 5;
+  margin-top: 150px;
+}
+
+.text-header {
+  color: white;
+  line-height: 40px;
+  font: 100 1.5vw/1 'Open Sans', sans-serif;
+}
+
+.text-header > a {
+  color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  -webkit-transition: border 750ms ease;
+  -moz-transition: border 750ms ease;
+  -ms-transition: border 750ms ease;
+  -o-transition: border 750ms ease;
+  transition: border 750ms ease;
+}
+
+.text-header > a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+
+.hero_txt {
+  font: 100 4.5vw/1 'Open Sans', sans-serif;
+  text-align: center;
+  color: #0B346E;
+  line-height: 40px;
+}
+
+.hero-sub {
+  color: #ffffff;
+  margin-top: 6%;
+  font: 100 2.25vw/1 'Open Sans', sans-serif;
+  line-height: 0.75em;
+}
+
+.hero-small {
+  color: #ffffff;
+  margin-top: 6%;
+  font: 100 1.25vw/1 'Open Sans', sans-serif;
+  line-height: 1em;
+}
+
+.flash {
+  border-bottom: 2px solid rgba(255, 255, 255, 1) !important;
+}
+
+.hero-sub > a {
+  color: #ffffff;
+  line-height: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  -webkit-transition: border 750ms ease;
+  -moz-transition: border 750ms ease;
+  -ms-transition: border 750ms ease;
+  -o-transition: border 750ms ease;
+  transition: border 750ms ease;
+}
+
+.hero-sub > a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+.hero_inner {
+  padding: 0 2rem;
+  text-transform: uppercase;
+  background: #ffffff;
+}
+
+.hero_accent {
+  padding: 1rem;
+  color: #ffffff;
+  background: rgb(0, 92, 175);
+}
+
+.help-text {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 0 40px;
+  text-align: center;
+  color: #ffffff;
+  font: 100 1.3125vw/2 'Open Sans', sans-serif;
+}
+
+@media (max-width: 400px) {
+  .hero_sec {
+    top: 20%;
+  }
+  .help-text {
+    margin: 0 0 15px;
+  }
+  .hero_inner {
+    padding: 0;
+  }
+  .text-header {
+    margin-top: 0px;
+  }
+  #bookingjs {
+    margin-top: 50px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Overrides for Dark Mode. */
+  html,
+  body,
+  #hero_particles {
+    background: #0B346E;
+  }
+}
